@@ -24,7 +24,7 @@ namespace CloudFiles_Deploy
             var username = args[2];
             string apiKey = args[3];
 
-            UploadFolderToRackspace(username, apiKey, containerName, folderToDeploy);
+            SmartRackspaceUpload.SmartUploadFolderToRackspace(username, apiKey, containerName, folderToDeploy);
 
             Console.WriteLine("Done");
 #if DEBUG
@@ -55,7 +55,10 @@ namespace CloudFiles_Deploy
                 cloudPath = cloudPath.Trim(@"\".ToCharArray());
                 cloudPath = cloudPath.Replace(@"\", "/");
 
+                var objects = provider.ListObjects(containerName);
+
                  provider.CreateObjectFromFile(containerName, file, cloudPath);
+                
                  Console.WriteLine("\t Deployed {0}", file);
             }
 

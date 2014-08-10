@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>Deploy-Test "D:\Dropbox\Rowdy Pixel New\blogrpcom\public" rowdypixel 0d6e958bb3eba655559eb2add82aec0e</StartArguments>
+  </PropertyGroup>
+</Project>
