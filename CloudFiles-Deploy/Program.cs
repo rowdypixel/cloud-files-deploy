@@ -26,6 +26,8 @@ namespace CloudFiles_Deploy
 
             SmartRackspaceUpload.SmartUploadFolderToRackspace(username, apiKey, containerName, folderToDeploy);
 
+           // UploadFolderToRackspace(username, apiKey, containerName, folderToDeploy);
+
             Console.WriteLine("Done");
 #if DEBUG
             Console.Read();
