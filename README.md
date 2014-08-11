@@ -10,8 +10,8 @@ Features
 
 Usage
 ---
-	CloudFiles-Deploy.exe "C:\Path\To\Site\Files" container_name username apikey
+	CloudFiles-Deploy.exe container_name "C:\Path\To\Site\Files" username apikey
 
 License
 ---
-Source for this program is released under the terms of the MIT License. 
+Source for this program is released under the terms of the MIT License.
