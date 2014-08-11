@@ -16,9 +16,11 @@ namespace CloudFiles_Deploy
         {
             var cloudIdentity = new CloudIdentity() { Username = username, APIKey = apiKey };
             var cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
-            Console.WriteLine("Preparing to deploy {0}", folderToDeploy);
-            Console.WriteLine("\t deploy to {0}", containerName);
+            Console.WriteLine("Preparing to Deploy");
+            Console.WriteLine("Deploy from {0}", folderToDeploy);
+            Console.WriteLine("Deploy to {0}", containerName);
 
+            Console.WriteLine("Scanning for differences.");
 
             var localmd5 = GetMD5ResultsForLocalFolder(folderToDeploy);
             var cloudmd5 = GetMD5ResultsForCloudContainer(cloudFilesProvider, containerName);
