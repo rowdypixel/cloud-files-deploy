@@ -12,6 +12,11 @@ namespace CloudFiles_Deploy
         public string LocalPath { get; set; }
         public string CloudPath { get; set; }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         public override bool Equals(object obj)
         {
             MD5Result theObject = obj as MD5Result;
