@@ -15,3 +15,5 @@ Usage
 License
 ---
 Source for this program is released under the terms of the MIT License.
+
+[![Build status](https://ci.appveyor.com/api/projects/status/hwg0jj4sqnxoq4uy/branch/default)](https://ci.appveyor.com/project/rowdypixel/cloud-files-deploy/branch/default)
